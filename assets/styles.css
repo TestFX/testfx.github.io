@@ -1,0 +1,49 @@
+h1, h2, h3 {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    background-color: white;
+}
+
+.segment > .container, .menu > .container {
+    margin: 0 auto;
+    width: 800px;
+}
+
+p {
+    line-height: 1.5em;
+}
+
+.fixed .container {
+    width: auto;
+    margin: 0 auto;
+}
+
+pre, code {
+    font-family: "Source Code Pro", monospace;
+    font-weight: 300;
+    background: transparent !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.ui.header .content {
+    padding-left: 0 !important;
+}
+
+.feature {
+    color: #2980b9;
+    text-decoration: none;
+    border-bottom: 1px solid #2980b9;
+}
+
+.frameworks {
+    display: inline-block;
+}

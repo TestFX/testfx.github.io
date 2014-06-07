@@ -10,6 +10,11 @@ body {
     font-family: "Source Sans Pro", sans-serif;
     font-weight: 300;
     background-color: #fcfcfc;
+    color: #454545;
+}
+
+#mainmenu {
+    border-top: 10px solid #c9de96;
 }
 
 .ui.inverted.segment .sub.header {
@@ -36,6 +41,15 @@ body {
     background: linear-gradient(to bottom, #f0f0f0 0%,#dbdbdb 100%);
 }*/
 
+#footer a, #footer p {
+    color: #808080 !important;
+    text-decoration: none;
+}
+
+#footer a:hover {
+    color: #c9de96 !important;
+    text-decoration: none;
+}
 
 p {
     line-height: 1.5em;
@@ -73,11 +87,15 @@ pre, code {
 }
 
 #code {
-    margin-bottom: 40px;
+    margin: 36px;
+}
+
+#footer {
+    padding-top: 36px;
 }
 
 #header {
-    padding: 25px 0;
+    padding: 36px 0;
 }
 
 .main.menu {
@@ -86,13 +104,17 @@ pre, code {
 }
 
 #header .ui.header .content {
-    font-size: 42px;
+    font-size: 48px;
     color: #fafafa !important;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 #header .ui.header .sub.header {
-    font-size: 18px;
+    font-size: 24px;
+}
+
+#header .ui.header .content .label {
+    margin-left: 15px;
 }
 
 .ui.inverted.segment .dividing.header, .ui.inverted.segment .divider {

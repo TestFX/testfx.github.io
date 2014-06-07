@@ -14,15 +14,20 @@ div#mainmenu.ui.inverted.main.menu.attached
 div#header.ui.inverted.basic.segment.attached
   div.container
     div.ui.grid.stackable
-      div.middle.aligned.row
-        div.twelve.column.wide
+      div.bottom.aligned.row
+        div.eleven.column.wide
           h1.ui.header
             div.content TestFX
-              div.sub.header Simple and clean testing for JavaFX
-        div.four.column.wide
-          div.fluid.ui.vertical.buttons
-            div.fluid.ui.button Downloads
-            div.fluid.ui.button Documentation
+              a.ui.label.black 3.1.2
+              div.sub.header Simple and Clean Testing for JavaFX
+        div.five.column.wide
+          div.fluid.ui.vertical.labeled.icon.buttons
+            div.ui.button
+              i.cloud.download.icon
+              | Download
+            div.ui.button
+              i.book.icon
+              | Read the Docs
 div#code.ui.basic.segment
   div.container
     div.ui.top.attached.tabular.menu

@@ -1,0 +1,146 @@
+//-------------------------------------------------------------------------------------------------
+// definitions.
+//-------------------------------------------------------------------------------------------------
+
+@white: #fafafa;
+
+@gray: #808080;
+@gray-dark: #454545;
+
+@green: #c9de96;
+@green-dark: #96bc85;
+
+.linear-gradient(@from, @to) {
+  background: @from;
+  background: linear-gradient(to bottom, @from 0%, @to 100%);
+  background: -moz-linear-gradient(top, @from 0%, @to 100%);
+  background: -webkit-linear-gradient(top, @from 0%, @to 100%);
+  background: -o-linear-gradient(top, @from 0%, @to 100%);
+  background: -ms-linear-gradient(top, @from 0%, @to 100%);
+}
+
+//-------------------------------------------------------------------------------------------------
+// html tags.
+//-------------------------------------------------------------------------------------------------
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body, p, li {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 300;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 600;
+}
+
+pre, code {
+  font-family: "Source Code Pro", monospace;
+  font-weight: 300;
+}
+
+//-------------------------------------------------------------------------------------------------
+// media declarations.
+//-------------------------------------------------------------------------------------------------
+
+@media print, screen {
+  .container {
+    margin: 0 auto;
+    width: 992px;
+  }
+
+  pre, code {
+    font-size: 16px;
+  }
+
+  // tablet.
+  @media (max-width: 992px) {
+    .container {
+      margin: 0 36px !important;
+      width: auto !important;
+    }
+  }
+
+  // mobile.
+  @media (max-width: 768px) {
+    .container {
+      margin: 0 36px !important;
+      width: auto !important;
+    }
+
+    pre, code {
+      font-size: 12px;
+    }
+  }
+}
+
+//-------------------------------------------------------------------------------------------------
+// page segments.
+//-------------------------------------------------------------------------------------------------
+
+#topbar {
+  border-top: 10px solid @green;
+  background-color: @gray-dark;
+
+  .menu {
+    color: @white;
+    text-shadow: 1px 1px 2px @gray;
+  }
+}
+
+#header {
+  padding: 36px 0;
+  .linear-gradient(@green, @green-dark);
+
+  .header {
+    color: @white;
+    text-shadow: 1px 1px 2px @gray;
+
+    .content {
+      font-size: 48px;
+
+      .label {
+        margin-left: 15px;
+      }
+    }
+
+    .sub.header {
+      font-size: 24px;
+    }
+  }
+}
+
+#code {
+  padding: 36px 0;
+
+  pre, code {
+    background: transparent;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+#footer {
+  padding-top: 36px;
+  background-color: @gray-dark;
+
+  .dividing.header, .divider {
+    border-bottom-color: @gray;
+  }
+
+  a, p, .item {
+    color: @gray;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: @green;
+  }
+}

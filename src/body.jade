@@ -1,4 +1,8 @@
-div#mainmenu.ui.inverted.main.menu.attached
+//-------------------------------------------------------------------------------------------------
+// topbar.
+//-------------------------------------------------------------------------------------------------
+
+div#topbar.ui.inverted.main.menu.attached
   div.container
     a.item.active TestFX
     a.item Get it
@@ -11,6 +15,11 @@ div#mainmenu.ui.inverted.main.menu.attached
         a.item: i.google.plus.icon
         a.item: i.github.icon
         a.item: i.stackexchange.icon
+
+//-------------------------------------------------------------------------------------------------
+// header.
+//-------------------------------------------------------------------------------------------------
+
 div#header.ui.inverted.basic.segment.attached
   div.container
     div.ui.grid.stackable
@@ -28,6 +37,11 @@ div#header.ui.inverted.basic.segment.attached
             div.ui.button
               i.book.icon
               | Read the Docs
+
+//-------------------------------------------------------------------------------------------------
+// code.
+//-------------------------------------------------------------------------------------------------
+
 div#code.ui.basic.segment
   div.container
     div.ui.top.attached.tabular.menu
@@ -35,7 +49,12 @@ div#code.ui.basic.segment
     div.ui.bottom.attached.segment
       pre: code.language-java
         include data/example-junit4.txt
-div#footer.ui.black.inverted.basic.segment(style="background-color: #454545 !important")
+
+//-------------------------------------------------------------------------------------------------
+// footer.
+//-------------------------------------------------------------------------------------------------
+
+div#footer.ui.inverted.basic.segment
   div.container
     div.ui.center.aligned.three.column.grid.stackable
       div.row

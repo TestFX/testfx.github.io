@@ -1,6 +1,5 @@
 !!! 5
 html
-
   //-----------------------------------------------------------------------------------------------
   // head.
   //-----------------------------------------------------------------------------------------------
@@ -31,6 +30,8 @@ html
   //-----------------------------------------------------------------------------------------------
 
   body
+    include body
+
     script(src="../assets/jquery/jquery-2.1.1.min.js")
     script(src="../assets/semantic/javascript/semantic.min.js")
     script(src="../assets/prism/prism.min.js")
@@ -38,6 +39,7 @@ html
       $(function() {
         $(".dropdown").dropdown();
         $(".popup").popup({delay: 1, duration: 1, position: "bottom center"});
-      })
 
-    include body
+        // FIX: Remove all script tags to avoid blank white space on page bottom.
+        $("body > script").remove();
+      });

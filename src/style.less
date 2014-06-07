@@ -52,6 +52,11 @@ pre, code {
   .container {
     margin: 0 auto;
     width: 992px;
+
+    // FIX: This fixes an issue, when using .grid.only within .container.
+    .ui.grid.only {
+      margin: 0;
+    }
   }
 
   pre, code {

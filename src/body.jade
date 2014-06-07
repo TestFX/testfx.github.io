@@ -3,21 +3,47 @@
 //-------------------------------------------------------------------------------------------------
 
 div#topbar.ui.inverted.main.menu.attached
-  div.container
-    a.item.active TestFX
-    a.item(href="https://github.com/TestFX/TestFX/wiki/Getting-started")
-      | Get it
-    a.item(href="https://github.com/TestFX/TestFX/wiki/Documentation")
-      | Learn it
-    a.item(href="https://github.com/TestFX/TestFX/issues")
-      | Improve it
-    div.right.menu
-      div.ui.grid.computer.tablet.only
-        a.item(href="https://groups.google.com/d/forum/testfx-discuss"): i.mail.icon
-        a.item: i.twitter.icon
-        a.item: i.google.plus.icon
-        a.item(href="https://github.com/TestFX/TestFX"): i.github.icon
-        a.item(href="http://stackoverflow.com/search?q=testfx"): i.stackexchange.icon
+  div.ui.grid.computer.tablet.only
+    div.container
+      a.item.active
+        | TestFX
+      a.item(href="https://github.com/TestFX/TestFX/wiki/Getting-started")
+        i.icon.download.cloud
+        | Get it
+      a.item(href="https://github.com/TestFX/TestFX/wiki/Documentation")
+        i.icon.book
+        | Learn it
+      a.item(href="https://github.com/TestFX/TestFX/issues")
+        i.icon.wrench
+        | Improve it
+      div.right.menu
+        a.popup.item(href="https://groups.google.com/d/forum/testfx-discuss", title="Mailing List")
+          i.mail.icon
+        a.popup.item(href="#", title="Twitter")
+          i.twitter.icon
+        a.popup.item(href="#", title="Google+")
+          i.google.plus.icon
+        a.popup.item(href="https://github.com/TestFX/TestFX", title="GitHub")
+          i.github.icon
+        a.popup.item(href="http://stackoverflow.com/search?q=testfx", title="Stack Overflow")
+          i.stackexchange.icon
+  div.ui.grid.mobile.only
+    div.container
+      a.item.active
+        | TestFX
+      div.right.menu
+        div.ui.dropdown.item
+          i.icon.reorder
+          div.menu
+            a.item(href="https://github.com/TestFX/TestFX/wiki/Getting-started")
+              i.icon.download.cloud
+              | Get it
+            a.item(href="https://github.com/TestFX/TestFX/wiki/Documentation")
+              i.icon.book
+              | Learn it
+            a.item(href="https://github.com/TestFX/TestFX/issues")
+              i.icon.wrench
+              | Improve it
 
 //-------------------------------------------------------------------------------------------------
 // header.

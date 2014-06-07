@@ -1,2 +1,61 @@
-
-
+div#mainmenu.ui.inverted.main.menu.attached
+  div.container
+    a.item.active TestFX
+    a.item Get it
+    a.item Learn it
+    a.item Improve it
+    div.right.menu
+      div.ui.grid.computer.tablet.only
+        a.item: i.mail.icon
+        a.item: i.twitter.icon
+        a.item: i.google.plus.icon
+        a.item: i.github.icon
+        a.item: i.stackexchange.icon
+div#header.ui.inverted.basic.segment.attached
+  div.container
+    div.ui.grid.stackable
+      div.middle.aligned.row
+        div.twelve.column.wide
+          h1.ui.header
+            div.content TestFX
+              div.sub.header Simple and clean testing for JavaFX
+        div.four.column.wide
+          div.fluid.ui.vertical.buttons
+            div.fluid.ui.button Downloads
+            div.fluid.ui.button Documentation
+div#code.ui.basic.segment
+  div.container
+    div.ui.top.attached.tabular.menu
+      a.active.item JUnit 4
+    div.ui.bottom.attached.segment
+      pre: code.language-java
+        include data/example-junit4.txt
+div#footer.ui.black.inverted.basic.segment(style="background-color: #454545 !important")
+  div.container
+    div.ui.center.aligned.three.column.grid.stackable
+      div.row
+        div.column
+          h4.ui.dividing.header General
+          div.ui.list
+            a.item(href="https://github.com/TestFX/TestFX/wiki/Getting-started") Downloads
+            a.item(href="https://github.com/TestFX/TestFX/wiki/Documentation") Documentation
+            a.item(href="https://github.com/TestFX/TestFX/wiki/Changelog") Release Notes
+            div.item Roadmap
+        div.column
+          h4.ui.dividing.header Contribution
+          div.ui.list
+            a.item(href="https://github.com/TestFX/TestFX") Source Code
+            a.item(href="https://github.com/TestFX/TestFX/issues") Issue Tracker
+            a.item(href="https://github.com/TestFX/TestFX/wiki") Wiki Pages
+        div.column
+          h4.ui.dividing.header Community
+          div.ui.list
+            a.item(href="https://groups.google.com/d/forum/testfx-discuss") Mailing List
+            div.item Twitter
+            div.item Google+
+            a.item(href="https://github.com/TestFX/TestFX") GitHub
+            a.item(href="http://stackoverflow.com/search?q=testfx") Stack Overflow
+    div.ui.center.aligned.one.column.grid
+      div.column
+        div.ui.divider
+        p Licensed under the <a href="http://ec.europa.eu/idabc/eupl">EUPL, Version 1.1</a>.

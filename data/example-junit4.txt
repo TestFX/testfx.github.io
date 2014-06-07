@@ -1,18 +1,18 @@
 class DesktopTest extends GuiTest {
-    public Parent getRootNode() {
-        return new Desktop()
-    }
-
     @Test
     public void should_be_able_to_drag_file_to_trashcan() {
-        // given: "a file was created on an empty #desktop"
+        // given: a file was created on an empty #desktop
         rightClickOn("#desktop").moveTo("New").clickOn("Text Document");
         type("myTextfile.txt").push(ENTER);
 
-        // when: "the file is dragged into #trashcan"
+        // when: the file is dragged into #trashcan
         drag(".file").dropTo("#trashcan");
 
-        // then: "#desktop contains zero files"
+        // then: #desktop contains zero files
         verifyThat("#desktop", contains(0, ".file"));
+    }
+
+    public Parent getRootNode() {
+        return new Desktop()
     }
 }

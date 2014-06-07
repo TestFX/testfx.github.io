@@ -4,109 +4,15 @@ html
     meta(charset="utf-8")
     meta(http-equiv="X-UA-Compatible", content="chrome=1")
     title TestFX: Simple and clean testing for JavaFX
-    link(rel="stylesheet", href="assets/brick/lato.css")
-    link(rel="stylesheet", href="assets/brick/sourcecodepro.css")
     link(rel="stylesheet", href="assets/styles.css")
+    link(rel="stylesheet", href="assets/brick/sourcesanspro.css")
+    link(rel="stylesheet", href="assets/brick/sourcecodepro.css")
     link(rel="stylesheet", href="assets/prism/prism.css")
     script(src="assets/prism/prism.js")
     script(src="assets/jquery/jquery-2.1.1.min.js")
     link(rel="stylesheet", href="assets/semantic/css/semantic.min.css")
     script(src="assets/semantic/javascript/semantic.min.js")
+
     meta(name="viewport", content="width=device-width, initial-scale=1, user-scalable=no")
-    script
-      $(function() {
-        $('.buzzword').popup();
-      })
   body
-
-    div.ui.transparent.inverted.main.menu
-      div.container
-        a.item.active TestFX
-        a.item Features
-        a.item Examples
-        a.item Compatibility
-        a.item Community
-        div.right.menu
-          a.item Blog
-          a.item GitHub
-
-    div.ui.basic.segment
-      div.container
-        div.ui.grid
-          div.twelve.column.wide
-            h2.ui.header
-              div.content TestFX
-                div.sub.header Simple and clean testing for JavaFX
-          div.four.column.wide
-            div.ui.center.aligned.segment
-              div.ui.header
-                div.content 3.1.2
-                  div.sub.header Feb 1, 2014
-
-    div.ui.basic.segment(style="background-color: #f0f0f0")
-      div.container
-        h2.ui.header
-          div.content Features
-
-        div.ui.grid
-          div.two.column.row
-            div.column
-              p A <span class="feature">ﬂuent</span> and <span class="feature">ﬁxture-less</span> API.
-            div.column
-              p <span class="feature">Robots</span> to interact with JavaFX.
-          div.two.column.row
-            div.column
-              p <span class="feature">Matchers</span> to verify behaviour with Hamcrest.
-            div.column
-              p <span class="feature">Services</span> to launch applications in JUnit, TestNG and Spock,
-                | setup and lookup stages and controls.
-
-    div.ui.basic.segment
-      div.container
-        h2.ui.header
-          div.content Examples
-          div.ui.bottom.attached.secondary.menu.frameworks
-            a.active.item JUnit 4
-            a.item TestNG
-            a.item Spock (in Groovy)
-
-        pre: code.language-java
-          include code.txt
-
-    div.ui.basic.segment(style="background-color: #f0f0f0")
-      div.container
-        h2.ui.header
-          div.content Compatibility
-
-        div.ul.bulleted.list
-          div.item Supports JavaFX 2 and JavaFX 8.
-          div.item Supports Hamcrest matchers with lambda expressions.
-          div.item Supports JUnit, TestNG, Spock (Groovy)
-
-    div.ui.basic.segment
-      div.container
-        h2.ui.header
-          div.content Community
-
-        div.ul.bulleted.list
-          div.item News
-          div.item Code examples, reference documention, wiki pages
-          div.item Articles, blogposts and talks.
-          div.item Release notes and roadmap
-          div.item Twitter account, Google+ Page, Mailing list
-          div.item Report issues (ideas, bugs, requests)
-          div.item Contribute to decisions
-          div.item Contributors and Credits
-
-        div.two.column.row
-          div.column
-            div.ui.relaxed.list
-              div.item
-                i.big.bug.icon
-                div.header Report issues
-        div.column
-          p test
-
-    div.ui.black.inverted.basic.segment(style="background-color: #000 !important")
-      div.container
-        p Footer
+    include body

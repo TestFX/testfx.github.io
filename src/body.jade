@@ -5,16 +5,19 @@
 div#topbar.ui.inverted.main.menu.attached
   div.container
     a.item.active TestFX
-    a.item Get it
-    a.item Learn it
-    a.item Improve it
+    a.item(href="https://github.com/TestFX/TestFX/wiki/Getting-started")
+      | Get it
+    a.item(href="https://github.com/TestFX/TestFX/wiki/Documentation")
+      | Learn it
+    a.item(href="https://github.com/TestFX/TestFX/issues")
+      | Improve it
     div.right.menu
       div.ui.grid.computer.tablet.only
-        a.item: i.mail.icon
+        a.item(href="https://groups.google.com/d/forum/testfx-discuss"): i.mail.icon
         a.item: i.twitter.icon
         a.item: i.google.plus.icon
-        a.item: i.github.icon
-        a.item: i.stackexchange.icon
+        a.item(href="https://github.com/TestFX/TestFX"): i.github.icon
+        a.item(href="http://stackoverflow.com/search?q=testfx"): i.stackexchange.icon
 
 //-------------------------------------------------------------------------------------------------
 // header.
@@ -27,14 +30,15 @@ div#header.ui.inverted.basic.segment.attached
         div.eleven.column.wide
           h1.ui.header
             div.content TestFX
-              a.ui.label.black 3.1.2
+              a.ui.label.black(href="https://github.com/TestFX/TestFX/wiki/Changelog#new-in-312")
+                | 3.1.2
               div.sub.header Simple and Clean Testing for JavaFX
         div.five.column.wide
           div.fluid.ui.vertical.labeled.icon.buttons
-            div.ui.button
+            a.ui.button(href="https://github.com/TestFX/TestFX/wiki/Getting-started")
               i.cloud.download.icon
               | Download
-            div.ui.button
+            a.ui.button(href="https://github.com/TestFX/TestFX/wiki/Documentation")
               i.book.icon
               | Read the Docs
 

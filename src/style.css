@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: #fafafa;
 }
 body,
 p,
@@ -32,14 +33,14 @@ code {
 }
 @media print and (max-width: 992px), screen and (max-width: 992px) {
   .container {
-    margin: 0 36px !important;
-    width: auto !important;
+    margin: 0 36px;
+    width: auto;
   }
 }
 @media print and (max-width: 768px), screen and (max-width: 768px) {
   .container {
-    margin: 0 36px !important;
-    width: auto !important;
+    margin: 0 18px;
+    width: auto;
   }
   pre,
   code {
@@ -72,6 +73,7 @@ code {
 }
 #header .header .content .label {
   margin-left: 15px;
+  text-decoration: none;
 }
 #header .header .sub.header {
   font-size: 24px;

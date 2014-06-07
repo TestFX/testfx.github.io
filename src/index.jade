@@ -1,5 +1,10 @@
 !!! 5
 html
+
+  //-----------------------------------------------------------------------------------------------
+  // head.
+  //-----------------------------------------------------------------------------------------------
+
   head
     meta(charset="utf-8")
     title TestFX: Simple and Clean Testing for JavaFX
@@ -12,9 +17,14 @@ html
     link(rel="stylesheet", href="../assets/prism/prism.min.css")
     link(rel="stylesheet", href="../assets/brick/sourcesanspro.css")
     link(rel="stylesheet", href="../assets/brick/sourcecodepro.css")
-  body
-    include body
 
+  //-----------------------------------------------------------------------------------------------
+  // body.
+  //-----------------------------------------------------------------------------------------------
+
+  body
     script(src="../assets/jquery/jquery-2.1.1.min.js")
     script(src="../assets/semantic/javascript/semantic.min.js")
     script(src="../assets/prism/prism.min.js")
+
+    include body

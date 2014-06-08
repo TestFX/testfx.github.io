@@ -18,8 +18,8 @@ h4 {
 }
 pre,
 code {
-  font-family: "Source Code Pro", monospace;
-  font-weight: 400;
+  font-family: "Source Code Pro", monospace !important;
+  font-weight: 400 !important;
 }
 @media print, screen {
   .container {
@@ -83,11 +83,15 @@ code {
 #code {
   padding: 36px 0;
 }
-#code pre,
-#code code {
+#code pre {
   background: transparent;
   margin: 0;
-  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  overflow-y: hidden;
+}
+#code pre code .line-numbers-rows {
+  border-right: none;
 }
 #footer {
   padding-top: 36px;

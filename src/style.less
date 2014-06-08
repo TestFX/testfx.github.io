@@ -2,6 +2,7 @@
 // definitions.
 //-------------------------------------------------------------------------------------------------
 
+@black: #666666;
 @white: #fafafa;
 
 @gray: #808080;
@@ -28,6 +29,7 @@
 body {
   margin: 0;
   padding: 0;
+  color: @black;
   background-color: @white;
 }
 
@@ -44,6 +46,10 @@ h1, h2, h3, h4 {
 pre, code {
   font-family: "Source Code Pro", monospace !important;
   font-weight: 400 !important;
+}
+
+p {
+  line-height: 1.5em;
 }
 
 //-------------------------------------------------------------------------------------------------
@@ -70,6 +76,10 @@ pre, code {
     .container {
       margin: 0 36px;
       width: auto;
+    }
+
+    pre, code {
+      font-size: 14px;
     }
   }
 
@@ -103,6 +113,9 @@ pre, code {
 #header {
   padding: 36px 0;
   .linear-gradient(@green, @green-dark);
+
+  // FIX: Remove line on top defined in .segment.attached.
+  box-shadow: none !important;
 
   .header {
     color: @white;

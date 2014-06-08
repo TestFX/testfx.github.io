@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  color: #666666;
   background-color: #fafafa;
 }
 body,
@@ -21,6 +22,9 @@ code {
   font-family: "Source Code Pro", monospace !important;
   font-weight: 400 !important;
 }
+p {
+  line-height: 1.5em;
+}
 @media print, screen {
   .container {
     margin: 0 auto;
@@ -38,6 +42,10 @@ code {
   .container {
     margin: 0 36px;
     width: auto;
+  }
+  pre,
+  code {
+    font-size: 14px;
   }
 }
 @media print and (max-width: 768px), screen and (max-width: 768px) {
@@ -65,6 +73,7 @@ code {
   background: -webkit-linear-gradient(top, #c9de96 0%, #96bc85 100%);
   background: -o-linear-gradient(top, #c9de96 0%, #96bc85 100%);
   background: -ms-linear-gradient(top, #c9de96 0%, #96bc85 100%);
+  box-shadow: none !important;
 }
 #header .header {
   color: #fafafa;

@@ -24,7 +24,7 @@ code {
 @media print, screen {
   .container {
     margin: 0 auto;
-    width: 992px;
+    width: 936px;
   }
   .container .ui.grid.only {
     margin: 0;
